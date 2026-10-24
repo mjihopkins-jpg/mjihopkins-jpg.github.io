@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Schedule</title>
+    <!-- This line references your CSS file -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg">
+    <style>
+           *{
+              margin: 0;
+              padding: 0;
+           }
+           header{
+              display: flex;
+              flex-direction: row; /* This is default so you can omit it but it's good to be explicit  */
+              justify-content: flex-start; /* This will snap all content of header to the left due to 'flex-direction: row'  */
+              background-color: white;
+              border-bottom: solid;
+              padding: 0.5rem 1rem; /* Padding top/bottom then left/right. 1rem = default pixel size of html font (14px or 16px etc) so 0.5rem = 7px or 8px  */
+            }
+           header > img{
+              height: 90px; /* Set the height of your image  */
+              width: auto; /* Keep the height/width ratio of source image  */
+           }
+           nav{
+              display: flex;
+              flex-direction: row;
+              flex: 1; /* Use the rest of the available space of the <header> */
+              justify-content: center; /* Keep the links in the center of this element  */
+              align-items: center; /* Puts the links vertically in the center of the <nav> */
+           }
+           nav a{
+              padding: 1rem;
+              text-decoration: none; /* Take away the default link styling  */
+              color: black;
+              border-bottom: 2px solid transparent;
+           }
+           nav  a:hover{
+              border-bottom: 2px solid black;
+              transition: border-bottom 0.4s ease-in;
+           }
+        </style>
+</head>
+<body>
+<header class="header">
+           
+           <nav class="navbar">
+              <a href="./index.html">Home</a>
+              <a href="./schedule.html">Schedule</a>
+              <a href="./travel.html">Travel</a>
+              <a href="./accommodations.html">Accommodations</a>
+              <a href="./activities.html">Activities</a>
+              <a href="./registry.html">Registry</a>
+           </nav>
+           <img class="logo" src="/assets/Logo.svg">
+        </header>
+        <br><br>
+<h1>Friday, June 11, 2027</h1>
+
+<p>Guests arrive, and guests staying on-site check in at the camp. Feel free to come and visit even if you've found your own accommodations! A casual dinner will be served Friday evening. </p>
+<hr class="double">
+
+<h1>Saturday, June 12, 2027</h1>
+
+<p>Saturday stuff. </p>
+<hr class="double">
+<h1>Sunday, June 13, 2027</h1>
+
+<p>Breakfast will be served at the camp, then we'll pack up and say our tearful goodbyes. If you're staying around the area for a little while longer, check out our <a href="./activities.html" target="_blank">activities</a> page for ideas for some places to visit!</p>
+
+</body>

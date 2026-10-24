@@ -1,0 +1,319 @@
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #sbs-2201 {
+    padding: var(--sectionPadding);
+    background-color: #FBF5F1;
+    overflow: hidden;
+    position: relative;
+    z-index: 1;
+  }
+  #sbs-2201 .cs-container {
+    width: 100%;
+    /* changes to 1280px at tablet */
+    max-width: 44rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #sbs-2201 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: center;
+    width: 100%;
+    max-width: 36.625rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: center;
+  }
+  #sbs-2201 .cs-title {
+    max-width: 30ch;
+  }
+  #sbs-2201 .cs-text {
+    margin-bottom: 1.5rem;
+  }
+  #sbs-2201 .cs-weekdays,
+  #sbs-2201 .cs-weekends {
+    font-size: 1rem;
+    font-weight: 700;
+    line-height: 1.2em;
+    text-transform: uppercase;
+    letter-spacing: 1.6px;
+    color: var(--bodyTextColor);
+  }
+  #sbs-2201 .cs-weekdays {
+    margin-bottom: 0.5rem;
+  }
+  #sbs-2201 .cs-button-solid {
+    font-size: 1rem;
+    font-weight: 700;
+    /* 46px - 56px */
+    line-height: clamp(2.875rem, 5.5vw, 3.5rem);
+    text-align: center;
+    text-decoration: none;
+    min-width: 9.375rem;
+    margin: 2rem 0 0 0;
+    /* prevents padding from adding to the width */
+    box-sizing: border-box;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+  }
+  #sbs-2201 .cs-button-solid:before {
+    content: "";
+    width: 0%;
+    height: 100%;
+    background: #000;
+    opacity: 1;
+    border-radius: 0.25rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: width 0.3s;
+  }
+  #sbs-2201 .cs-button-solid:hover:before {
+    width: 100%;
+  }
+  #sbs-2201 .cs-image-group {
+    /* scales the whole section down and ties the font size to the vw and stops at 75% of the vale of 1em, changes at desktop */
+    font-size: min(2.3vw, .75rem);
+    /* everything inside this box is in ems so we can scale it all down proportionally with a font size */
+    width: 39.375em;
+    height: 39.1875em;
+    order: -1;
+    position: relative;
+    /* prevents flexbox from squishing it */
+    flex: none;
+  }
+  #sbs-2201 .cs-picture {
+    overflow: hidden;
+    border: 8px solid #fff;
+    display: block;
+    position: absolute;
+  }
+  #sbs-2201 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #sbs-2201 .cs-picture1 {
+    width: 24em;
+    height: 29.375em;
+    top: 0;
+    left: 0;
+  }
+  #sbs-2201 .cs-picture2 {
+    width: 21.5625em;
+    height: 31.875em;
+    right: 0;
+    bottom: 0;
+  }
+  #sbs-2201 .cs-flower {
+    /* 137px - 309px */
+    width: clamp(8.5625rem, 20vw, 19.3125rem);
+    height: auto;
+    display: block;
+    position: absolute;
+    right: -2rem;
+    bottom: -0.5rem;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #sbs-2201 .cs-container {
+    max-width: 80rem;
+  }
+  #sbs-2201 .cs-flower {
+    right: 0;
+    bottom: 0;
+  }
+}
+/* Desktop - 1024px */
+@media only screen and (min-width: 64rem) {
+  #sbs-2201 .cs-container {
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+  }
+  #sbs-2201 .cs-content {
+    text-align: left;
+    padding: 3rem 0;
+    align-self: center;
+    align-items: flex-start;
+  }
+  #sbs-2201 .cs-image-group {
+    font-size: min(1.3vw, 1rem);
+    height: auto;
+    min-height: 39.1875em;
+  }
+  #sbs-2201 .cs-picture1 {
+    height: 74.960128%;
+  }
+  #sbs-2201 .cs-picture2 {
+    height: 81.339719%;
+  }
+}
+
+:root {
+    /* Add these styles to your global stylesheet, which is used across all site pages. You only need to do this once. All elements in the library derive their variables and base styles from this central sheet, simplifying site-wide edits. For instance, if you want to modify how your h2's appear across the site, you just update it once in the global styles, and the changes apply everywhere. */
+    --primary: #6C765B;
+    --primaryLight: #ffba43;
+    --secondary: #ffba43;
+    --secondaryLight: #ffba43;
+    --headerColor: #1a1a1a;
+    --bodyTextColor: #4e4b66;
+    --bodyTextColorWhite: #fafbfc;
+    /* 13px - 16px */
+    --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
+    /* 31px - 49px */
+    --headerFontSize: clamp(1.9375rem, 3.9vw, 3.0625rem);
+    --bodyFontSize: 1rem;
+    /* 60px - 100px top and bottom */
+    --sectionPadding: clamp(3.75rem, 1vw, 6.25rem) 1rem;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Merriweather", Arial, sans-serif;
+    background-color: #FBF5F1;
+}
+
+.header {
+  padding: 10px;
+  text-align: center;
+  background: #FBF5F1;
+  color: white;
+  font-size: 30px;
+  font-family: "Merriweather", Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px
+}
+
+p {
+  /* Typography */
+  font-family: 'Merriweather', sans-serif; /* Sets the typeface */
+  font-size: 16px;                     /* Sets text size */
+  font-weight: 400;                    /* Sets text thickness (e.g., normal, bold) */
+  line-height: 1.6;                    /* Adds breathing room between text lines */
+  color: #4e4b66;                      /* Changes text color */
+
+  /* Layout & Spacing */
+  text-align: center;                 /* Aligns text (left, right, center, justify) */
+  margin-bottom: 20px;                 /* Controls spacing between paragraphs */
+  padding: 10px;                   /* Indents the very first line */
+  max-width: 60ch;
+  margin-left: auto;       /* Automatically balances left spacing */
+  margin-right: auto;      /* Automatically balances right spacing */
+}
+
+p a{
+  font-family: 'Merriweather', sans-serif; /* Sets the typeface */
+  font-size: 16px;                     /* Sets text size */
+  font-weight: 400;                    /* Sets text thickness (e.g., normal, bold) */
+  line-height: 1.6;                    /* Adds breathing room between text lines */
+  color: #4e4b66;  
+}
+
+hr.rounded {
+  border-top: 8px solid #4e4b66;
+  border-radius: 5px;
+  border-bottom: none;
+}
+
+hr.double {
+ border-top: 3px double #4e4b66;
+ border-bottom: none;
+ width: 100%;       /* Fills container on smaller screens */
+ max-width: 300px;  /* Stops expanding at this exact point */
+ margin: 20px auto; /* Centers the line with top/bottom spacing */
+
+}
+
+*, *:before, *:after {
+    /* prevents padding from affecting height and width */
+    box-sizing: border-box;
+}
+.cs-topper {
+    font-size: var(--topperFontSize);
+    line-height: 1.2em;
+    text-transform: uppercase;
+    text-align: inherit;
+    letter-spacing: .1em;
+    font-weight: 700;
+    font-family: "Merriweather", Arial, sans-serif;
+    color: var(--primary);
+    margin-bottom: 0.25rem;
+    display: block;
+}
+
+.cs-title {
+    font-size: var(--headerFontSize);
+    font-family: "Merriweather", Arial, sans-serif;
+    font-weight: 900;
+    line-height: 1.2em;
+    text-align: inherit;
+    max-width: 43.75rem;
+    margin: 0 0 1rem 0;
+    color: var(--headerColor);
+    position: relative;
+}
+
+.cs-text {
+    font-size: var(--bodyFontSize);
+    font-family: "Merriweather", Arial, sans-serif;
+    line-height: 1.5em;
+    text-align: inherit;
+    width: 100%;
+    max-width: 40.625rem;
+    margin: 0;
+    color: var(--bodyTextColor);
+}
+                            
+header{
+              display: flex;
+              flex-direction: row; /* This is default so you can omit it but it's good to be explicit  */
+              justify-content: flex-start; /* This will snap all content of header to the left due to 'flex-direction: row'  */
+              background-color: white;
+              border-bottom: solid;
+              padding: 0.5rem 1rem; /* Padding top/bottom then left/right. 1rem = default pixel size of html font (14px or 16px etc) so 0.5rem = 7px or 8px  */
+            }
+           header > img{
+              height: 90px; /* Set the height of your image  */
+              width: auto; /* Keep the height/width ratio of source image  */
+           }
+           nav{
+              display: flex;
+              flex-direction: row;
+              flex: 1; /* Use the rest of the available space of the <header> */
+              justify-content: center; /* Keep the links in the center of this element  */
+              align-items: center; /* Puts the links vertically in the center of the <nav> */
+           }
+           nav a{
+              padding: 1rem;
+              text-decoration: none; /* Take away the default link styling  */
+              color: black;
+              border-bottom: 2px solid transparent;
+           }
+           nav  a:hover{
+              border-bottom: 2px solid black;
+              transition: border-bottom 0.4s ease-in;
+           }
