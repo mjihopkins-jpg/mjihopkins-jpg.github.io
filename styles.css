@@ -8,7 +8,7 @@
 @media only screen and (min-width: 0rem) {
   #sbs-2201 {
     padding: var(--sectionPadding);
-    background-color: #FBF5F1;
+    background-color: #FBF8EC;
     overflow: hidden;
     position: relative;
     z-index: 1;
@@ -191,13 +191,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Merriweather", Arial, sans-serif;
-    background-color: #FBF5F1;
+    background-color: #FBF8EC;
 }
 
 .header {
   padding: 10px;
   text-align: center;
-  background: #FBF5F1;
+  background: #FBF8EC;
   color: white;
   font-size: 30px;
   font-family: "Merriweather", Arial, sans-serif;
@@ -223,6 +223,29 @@ p {
   max-width: 60ch;
   margin-left: auto;       /* Automatically balances left spacing */
   margin-right: auto;      /* Automatically balances right spacing */
+}
+ul{  /* Typography */
+  font-family: 'Merriweather', sans-serif; /* Sets the typeface */
+  font-size: 16px;                     /* Sets text size */
+  font-weight: 400;                    /* Sets text thickness (e.g., normal, bold) */
+  line-height: 1.6;                    /* Adds breathing room between text lines */
+  color: #4e4b66;                      /* Changes text color */
+
+  /* Layout & Spacing */
+  text-align: left;                 /* Aligns text (left, right, center, justify) */
+  margin-bottom: 20px;                 /* Controls spacing between paragraphs */
+  padding: 10px;                   /* Indents the very first line */
+  max-width: 60ch;
+  margin-left: auto;       /* Automatically balances left spacing */
+  margin-right: auto;      /* Automatically balances right spacing */
+}
+
+ul a{
+  font-family: 'Merriweather', sans-serif; /* Sets the typeface */
+  font-size: 16px;                     /* Sets text size */
+  font-weight: 400;                    /* Sets text thickness (e.g., normal, bold) */
+  line-height: 1.6;                    /* Adds breathing room between text lines */
+  color: #4e4b66;  
 }
 
 p a{
