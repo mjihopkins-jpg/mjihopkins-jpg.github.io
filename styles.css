@@ -8,7 +8,7 @@
 @media only screen and (min-width: 0rem) {
   #sbs-2201 {
     padding: var(--sectionPadding);
-    background-color: #FBF8EC;
+    background-color: #FAF5F1;
     overflow: hidden;
     position: relative;
     z-index: 1;
@@ -177,7 +177,7 @@
     --secondaryLight: #ffba43;
     --headerColor: #1a1a1a;
     --bodyTextColor: #4e4b66;
-    --bodyTextColorWhite: #fafbfc;
+    --bodyTextColorWhite: #faf5F1;
     /* 13px - 16px */
     --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem);
     /* 31px - 49px */
@@ -191,13 +191,13 @@ body {
     margin: 0;
     padding: 0;
     font-family: "Merriweather", Arial, sans-serif;
-    background-color: #FBF8EC;
+    background-color: #FAF5F1;
 }
 
 .header {
   padding: 10px;
   text-align: center;
-  background: #FBF8EC;
+  background: #FAF5F1;
   color: white;
   font-size: 30px;
   font-family: "Merriweather", Arial, sans-serif;
@@ -232,7 +232,7 @@ ul{  /* Typography */
   color: #4e4b66;                      /* Changes text color */
 
   /* Layout & Spacing */
-  text-align: center;                 /* Aligns text (left, right, center, justify) */
+  text-align: left;                 /* Aligns text (left, right, center, justify) */
   margin-bottom: 20px;                 /* Controls spacing between paragraphs */
   padding: 10px;                   /* Indents the very first line */
   max-width: 60ch;
