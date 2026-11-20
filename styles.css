@@ -232,7 +232,7 @@ ul{  /* Typography */
   color: #4e4b66;                      /* Changes text color */
 
   /* Layout & Spacing */
-  text-align: left;                 /* Aligns text (left, right, center, justify) */
+  text-align: center;                 /* Aligns text (left, right, center, justify) */
   margin-bottom: 20px;                 /* Controls spacing between paragraphs */
   padding: 10px;                   /* Indents the very first line */
   max-width: 60ch;
